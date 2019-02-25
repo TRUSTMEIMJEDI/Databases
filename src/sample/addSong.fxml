@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<DialogPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DialogController">
+    <headerText>
+        Fill the information for the new song, album and artist
+    </headerText>
+    <content>
+        <GridPane hgap="10" prefHeight="100.0" prefWidth="310.0" vgap="10">
+            <Label text="Song title: " GridPane.columnIndex="1" />
+            <TextField fx:id="songTitleField6" GridPane.columnIndex="2" />
+
+            <Label text="Track number: " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="trackNumberField6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        </GridPane>
+    </content>
+</DialogPane>

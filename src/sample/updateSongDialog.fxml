@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<DialogPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DialogController">
+    <headerText>
+        Fill the information for the new song
+    </headerText>
+    <content>
+        <GridPane hgap="10" prefHeight="266.0" prefWidth="230.0" vgap="10">
+            <Label text="Track: " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="trackField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="Title: " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="titleField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label text="AlbumId: " GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField fx:id="albumIdField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         <Label prefHeight="17.0" prefWidth="51.0" text="Track:" GridPane.rowIndex="5" />
+         <Label layoutX="20.0" layoutY="135.0" prefHeight="17.0" prefWidth="51.0" text="Title:" GridPane.rowIndex="6" />
+         <Label layoutX="20.0" layoutY="162.0" prefHeight="17.0" prefWidth="51.0" text="AlbumId:" GridPane.rowIndex="7" />
+         <Label text="Aktualne dane:" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         <Label text="" fx:id="trackField1" prefHeight="17.0" prefWidth="149.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         <Label text="" fx:id="titleField1" prefHeight="17.0" prefWidth="149.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         <Label text="" fx:id="albumIdField1" prefHeight="17.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+        </GridPane>
+    </content>
+</DialogPane>

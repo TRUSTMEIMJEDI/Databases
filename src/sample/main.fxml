@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+            fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <TableView fx:id="artistTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn prefWidth="${artistTable.width}" text="Name">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="name"/>
+                        </cellValueFactory>
+                </TableColumn>
+            </columns>
+            <BorderPane.margin>
+                <Insets right="10.0" />
+            </BorderPane.margin>
+        </TableView>
+    </center>
+    <right>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="170.00" spacing="20.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button onAction="#listArtists" maxWidth="Infinity" mnemonicParsing="false" text="List Artists" />
+                <Button onAction="#listAlbumsForArtist" maxWidth="Infinity" mnemonicParsing="false" text="Show Albums (artist)" />
+                <Button onAction="#listSongsForAlbum" maxWidth="Infinity" mnemonicParsing="false" text="Show songs (album)" />
+                <Button onAction="#showAddAllDialog" maxWidth="Infinity" mnemonicParsing="false" text="Add Song, Artist, Album" />
+                <Button onAction="#showAddSong" maxWidth="Infinity" mnemonicParsing="false" text="Add Song (album)" />
+                <Button onAction="#showUpdateSong" maxWidth="Infinity" mnemonicParsing="false" text="Update Song" />
+                <Button onAction="#deleteSong" maxWidth="Infinity" mnemonicParsing="false" text="Delete Song" />
+                <Button onAction="#showAddAlbum" maxWidth="Infinity" mnemonicParsing="false" text="Add Album (artist)" />
+                <Button onAction="#showUpdateAlbum" maxWidth="Infinity" mnemonicParsing="false" text="Update Album" />
+                <Button onAction="#deleteAlbum" maxWidth="Infinity" mnemonicParsing="false" text="Delete Album" />
+                <Button onAction="#showAddArtist" maxWidth="Infinity" mnemonicParsing="false" text="Add Artist" />
+                <Button onAction="#showUpdateArtist" maxWidth="Infinity" mnemonicParsing="false" text="Update Artist" />
+                <Button onAction="#deleteArtist" maxWidth="Infinity" mnemonicParsing="false" text="Delete Artist" />
+            </children>
+            <BorderPane.margin>
+                <Insets right="10.0" />
+            </BorderPane.margin>
+        </VBox>
+    </right>
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <ProgressBar fx:id="progressBar" visible="false" prefWidth="200.0" progress="0.0">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </ProgressBar>
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

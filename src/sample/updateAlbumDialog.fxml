@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<DialogPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DialogController">
+    <headerText>
+        Fill the information for the new album
+    </headerText>
+    <content>
+        <GridPane hgap="10" prefHeight="163.0" prefWidth="230.0" vgap="10">
+            <Label text="Name: " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="nameField11" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="ArtistId: " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="artistIdField11" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label prefHeight="17.0" prefWidth="51.0" text="Name:" GridPane.rowIndex="5" />
+            <Label layoutX="20.0" layoutY="135.0" prefHeight="17.0" prefWidth="51.0" text="ArtistId:" GridPane.rowIndex="6" />
+            <Label text="Aktualne dane:" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="nameField111" prefHeight="17.0" prefWidth="149.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="artistIdField111" prefHeight="17.0" prefWidth="149.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        </GridPane>
+    </content>
+</DialogPane>

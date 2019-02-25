@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<DialogPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DialogController">
+    <headerText>
+        Fill the information for the new artist
+    </headerText>
+    <content>
+        <GridPane hgap="10" prefHeight="102.0" prefWidth="230.0" vgap="10">
+            <Label text="Name: " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="nameField2" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label prefHeight="17.0" prefWidth="51.0" text="Name:" GridPane.rowIndex="5" />
+            <Label text="Aktualne dane:" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="nameField22" prefHeight="17.0" prefWidth="149.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        </GridPane>
+    </content>
+</DialogPane>
